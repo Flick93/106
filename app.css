@@ -1,0 +1,29 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body {
+    background-color: skyblue;
+}*/
+
+main {
+    height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+    display: flex
+}
+
+section{
+    padding: 20px;
+}
+
+#list{
+    flex: 2;
+}
+
+#form{
+    flex: 1;
+}
