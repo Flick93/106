@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+  }
+  
+  main {
+    height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    padding: 20px;
+  }
+  
+  section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #list {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  #form {
+    flex: 1;
+  }
+  
+  .task-container {
+    margin: 15px 0;
+    border-top: 4px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .task-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task .info {
+    flex: 3;
+  }
+  
+  .task .info h5 {
+    margin: 0 0 5px 0;
+    color: #1e90ff; /* Dodger blue for titles */
+    font-size: 1.1em;
+  }
+  
+  .task .info p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  .task .status {
+    flex: 1;
+    text-align: center;
+    background-color: #e6f2ff; /* Light blue background */
+    color: #1e90ff; /* Dodger blue text */
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  .task .date-budget {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  /* Form styles */
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #1e90ff; /* Dodger blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1873cc; /* Darker blue on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    
+    #list, #form {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
